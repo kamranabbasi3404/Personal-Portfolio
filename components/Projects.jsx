@@ -5,7 +5,7 @@ const featuredProjects = [
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
         github: 'https://github.com/kamranabbasi3404',
         demo: 'https://demo.example.com/ai-job-portal',
-        image: '/projects/ai-job-portal.png',
+        image: null, // Add: /projects/ai-job-portal.png
     },
     {
         title: 'Live Face Detection',
@@ -13,7 +13,7 @@ const featuredProjects = [
         tech: ['Python', 'OpenCV', 'React.js', 'TensorFlow'],
         github: 'https://github.com/kamranabbasi3404',
         demo: 'https://demo.example.com/face-detection',
-        image: '/projects/face-detection.png',
+        image: null, // Add: /projects/face-detection.png
     },
     {
         title: 'Buyonix',
@@ -21,7 +21,7 @@ const featuredProjects = [
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'ML', 'Docker'],
         github: 'https://github.com/kamranabbasi3404',
         demo: 'https://demo.example.com/buyonix',
-        image: '/projects/buyonix.png',
+        image: null, // Add: /projects/buyonix.png
     },
     {
         title: 'RAG-Based Chatbot',
@@ -29,7 +29,7 @@ const featuredProjects = [
         tech: ['Python', 'LangChain', 'RAG', 'React.js'],
         github: 'https://github.com/kamranabbasi3404',
         demo: null,
-        image: '/projects/rag-chatbot.png',
+        image: null, // Add: /projects/rag-chatbot.png
     },
     {
         title: 'Advents',
@@ -37,7 +37,7 @@ const featuredProjects = [
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
         github: 'https://github.com/kamranabbasi3404',
         demo: null,
-        image: '/projects/advents.png',
+        image: null, // Add: /projects/advents.png
     },
 ];
 
@@ -120,14 +120,23 @@ function FeaturedProjectCard({ project, index }) {
                         </div>
                     </div>
                     <div className="browser-content">
-                        <div className="browser-placeholder">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                <rect x="3" y="3" width="18" height="18" rx="2" />
-                                <circle cx="8.5" cy="8.5" r="1.5" />
-                                <path d="M21 15l-5-5L5 21" />
-                            </svg>
-                            <span>{project.title}</span>
-                        </div>
+                        {project.image ? (
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="browser-image"
+                            />
+                        ) : (
+                            <div className="browser-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <circle cx="8.5" cy="8.5" r="1.5" />
+                                    <path d="M21 15l-5-5L5 21" />
+                                </svg>
+                                <span>{project.title}</span>
+                                <span className="placeholder-hint">Screenshot Coming Soon</span>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>

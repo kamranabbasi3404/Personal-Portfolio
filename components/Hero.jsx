@@ -1,4 +1,7 @@
 export default function Hero() {
+    // Change to true when you add your photo at public/profile.jpg
+    const hasProfileImage = false;
+
     return (
         <section id="about" className="hero">
             {/* Animated Background Blobs */}
@@ -20,9 +23,27 @@ export default function Hero() {
 
             <div className="container">
                 <div className="hero-content">
-                    <span className="hero-badge">
-                        Available for opportunities
-                    </span>
+                    {/* Profile Picture */}
+                    <div className="hero-profile">
+                        {hasProfileImage ? (
+                            <img
+                                src="/profile.jpg"
+                                alt="Kamran Ali Abbasi"
+                                className="hero-profile-img"
+                            />
+                        ) : (
+                            <div className="hero-profile-placeholder">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </div>
+                        )}
+                        <div className="hero-profile-status">
+                            <span className="status-dot"></span>
+                            Available
+                        </div>
+                    </div>
 
                     <h1 className="hero-name">
                         Hi, I&apos;m <span className="hero-name-gradient">Kamran Ali Abbasi</span>
