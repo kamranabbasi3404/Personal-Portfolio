@@ -7,7 +7,7 @@ const skillCategories = [
                 <polyline points="8 6 2 12 8 18" />
             </svg>
         ),
-        skills: ['JavaScript', 'Python'],
+        skills: ['JavaScript', 'Python', 'C++', 'Java'],
     },
     {
         title: 'Frontend',
@@ -18,7 +18,7 @@ const skillCategories = [
                 <line x1="9" y1="21" x2="9" y2="9" />
             </svg>
         ),
-        skills: ['React.js', 'Next.js', 'HTML', 'CSS'],
+        skills: ['React.js', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS'],
     },
     {
         title: 'Backend',
@@ -41,7 +41,7 @@ const skillCategories = [
                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
             </svg>
         ),
-        skills: ['MongoDB'],
+        skills: ['MongoDB', 'MySQL'],
     },
     {
         title: 'AI / ML',

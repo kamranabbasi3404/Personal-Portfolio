@@ -33,10 +33,11 @@ export default function Hero() {
                             />
                         ) : (
                             <div className="hero-profile-placeholder">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                    <circle cx="12" cy="7" r="4" />
-                                </svg>
+                                <img
+                                    src="/mine.jpeg"
+                                    alt="Kamran Ali Abbasi"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+                                />
                             </div>
                         )}
                         <div className="hero-profile-status">
@@ -50,7 +51,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="hero-title">
-                        Software Engineer | MERN Stack | AI/ML
+                        Software Engineering Student | MERN Stack Developer | AI/ML Project Experience
                     </p>
 
                     <p className="hero-description">

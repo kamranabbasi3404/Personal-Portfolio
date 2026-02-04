@@ -3,7 +3,7 @@ const featuredProjects = [
         title: 'AI Job Portal',
         description: 'Job portal with AI-based CV analysis and job recommendations. Features intelligent matching between candidates and job postings using machine learning algorithms.',
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
-        github: 'https://github.com/kamranabbasi3404',
+        github: 'https://github.com/kamranabbasi3404/job-portal-system',
         demo: 'https://demo.example.com/ai-job-portal',
         image: null, // Add: /projects/ai-job-portal.png
     },
@@ -11,9 +11,9 @@ const featuredProjects = [
         title: 'Live Face Detection',
         description: 'Real-time face detection system using Python and computer vision. Integrated AI model with frontend interface for live camera processing and recognition.',
         tech: ['Python', 'OpenCV', 'React.js', 'TensorFlow'],
-        github: 'https://github.com/kamranabbasi3404',
+        github: 'https://github.com/kamranabbasi3404/Live-Face-Recognition',
         demo: 'https://demo.example.com/face-detection',
-        image: null, // Add: /projects/face-detection.png
+        image: '/livefacedetection.jpg',
     },
     {
         title: 'Buyonix',
@@ -58,7 +58,7 @@ const otherProjects = [
         title: 'Quiz App',
         description: 'Interactive quiz application with multiple categories and scoring system.',
         tech: ['Java', 'MySQL'],
-        github: 'https://github.com/kamranabbasi3404',
+        github: 'https://github.com/kamranabbasi3404/quiz-app',
     },
 ];
 
@@ -125,6 +125,7 @@ function FeaturedProjectCard({ project, index }) {
                                 src={project.image}
                                 alt={project.title}
                                 className="browser-image"
+                                style={{ objectFit: 'contain', width: '100%', height: '100%', backgroundColor: '#1a1a2e' }}
                             />
                         ) : (
                             <div className="browser-placeholder">
