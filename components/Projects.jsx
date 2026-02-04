@@ -5,7 +5,7 @@ const featuredProjects = [
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
         github: 'https://github.com/kamranabbasi3404/job-portal-system',
         demo: 'https://demo.example.com/ai-job-portal',
-        image: null, // Add: /projects/ai-job-portal.png
+        image: '/hireflow.jpg',
     },
     {
         title: 'Live Face Detection',
@@ -21,7 +21,7 @@ const featuredProjects = [
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'ML', 'Docker'],
         github: 'https://github.com/kamranabbasi3404',
         demo: 'https://demo.example.com/buyonix',
-        image: null, // Add: /projects/buyonix.png
+        image: '/buyonix.jpg?v=2',
     },
     {
         title: 'RAG-Based Chatbot',
@@ -125,7 +125,7 @@ function FeaturedProjectCard({ project, index }) {
                                 src={project.image}
                                 alt={project.title}
                                 className="browser-image"
-                                style={{ objectFit: 'contain', width: '100%', height: '100%', backgroundColor: '#1a1a2e' }}
+                                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
                         ) : (
                             <div className="browser-placeholder">
