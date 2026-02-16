@@ -1,6 +1,13 @@
 /* =========================
    CSS Variables & Reset
    ========================= */
+/* Hide Next.js dev mode indicator */
+[data-nextjs-dialog-overlay],
+[data-nextjs-toast],
+nextjs-portal {
+  display: none !important;
+}
+
 :root {
   /* Colors - Premium Dark Theme */
   --bg-primary: #030014;
@@ -1312,6 +1319,7 @@ button {
   gap: 20px;
   transition: all var(--transition-normal);
   position: relative;
+  align-items: flex-start;
 }
 
 .small-project-card:hover {
@@ -1378,11 +1386,9 @@ button {
 }
 
 .small-project-link {
-  position: absolute;
-  top: 28px;
-  right: 28px;
   width: 40px;
   height: 40px;
+  min-width: 40px;
   background: rgba(139, 92, 246, 0.1);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
@@ -1391,6 +1397,8 @@ button {
   justify-content: center;
   color: var(--text-secondary);
   transition: all var(--transition-normal);
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .small-project-link:hover {

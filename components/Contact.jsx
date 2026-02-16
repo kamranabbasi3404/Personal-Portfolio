@@ -28,7 +28,7 @@ export default function Contact() {
 
                 <div className="contact-grid">
                     <div className="contact-info">
-                        <a href="mailto:kamranabbasi@example.com" className="contact-item">
+                        <a href="mailto:kamranali3404@gmail.com" className="contact-item">
                             <div className="contact-item-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -37,7 +37,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <p className="contact-item-label">Email</p>
-                                <p className="contact-item-value">kamranabbasi@example.com</p>
+                                <p className="contact-item-value">kamranali3404@gmail.com</p>
                             </div>
                         </a>
 
