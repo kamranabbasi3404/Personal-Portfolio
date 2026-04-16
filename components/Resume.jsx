@@ -17,7 +17,7 @@ export default function Resume() {
                         Interested in my full experience? Download my resume to learn more about my
                         skills, projects, and professional background.
                     </p>
-                    <a href="/resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <a href="/Kamran Resume.pdf" download="Kamran_Resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                             <polyline points="7 10 12 15 17 10" />

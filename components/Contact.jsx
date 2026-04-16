@@ -1,23 +1,32 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    const formRef = useRef();
+    const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Form submission logic would go here
-        alert('Thank you for your message! I will get back to you soon.');
-        setFormData({ name: '', email: '', message: '' });
+        setStatus('sending');
+
+        emailjs
+            .sendForm(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            )
+            .then(() => {
+                setStatus('success');
+                formRef.current.reset();
+                setTimeout(() => setStatus('idle'), 5000);
+            })
+            .catch(() => {
+                setStatus('error');
+                setTimeout(() => setStatus('idle'), 5000);
+            });
     };
 
     return (
@@ -66,15 +75,13 @@ export default function Contact() {
                         </a>
                     </div>
 
-                    <form className="contact-form" onSubmit={handleSubmit}>
+                    <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input
                                 type="text"
                                 id="name"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleChange}
+                                name="from_name"
                                 placeholder="Your name"
                                 required
                             />
@@ -85,9 +92,7 @@ export default function Contact() {
                             <input
                                 type="email"
                                 id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
+                                name="from_email"
                                 placeholder="Your email"
                                 required
                             />
@@ -98,20 +103,44 @@ export default function Contact() {
                             <textarea
                                 id="message"
                                 name="message"
-                                value={formData.message}
-                                onChange={handleChange}
                                 placeholder="Your message"
                                 required
                             ></textarea>
                         </div>
 
-                        <button type="submit" className="btn btn-primary">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <line x1="22" y1="2" x2="11" y2="13" />
-                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                            </svg>
-                            Send Message
+                        <button
+                            type="submit"
+                            className="btn btn-primary"
+                            disabled={status === 'sending'}
+                        >
+                            {status === 'sending' ? (
+                                <>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ animation: 'spin 1s linear infinite' }}>
+                                        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                                    </svg>
+                                    Sending...
+                                </>
+                            ) : (
+                                <>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="22" y1="2" x2="11" y2="13" />
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                    </svg>
+                                    Send Message
+                                </>
+                            )}
                         </button>
+
+                        {status === 'success' && (
+                            <div className="form-status form-status-success">
+                                ✅ Message sent! I&apos;ll get back to you soon.
+                            </div>
+                        )}
+                        {status === 'error' && (
+                            <div className="form-status form-status-error">
+                                ❌ Something went wrong. Please try again or email directly.
+                            </div>
+                        )}
                     </form>
                 </div>
             </div>

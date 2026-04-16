@@ -24,12 +24,12 @@ const featuredProjects = [
         image: '/buyonix.jpg?v=2',
     },
     {
-        title: 'RAG-Based Chatbot',
-        description: 'Intelligent chatbot using Retrieval-Augmented Generation. Provides context-aware and document-based responses for better accuracy and relevance.',
-        tech: ['Python', 'LangChain', 'RAG', 'React.js'],
-        github: 'https://github.com/kamranabbasi3404',
-        demo: null,
-        image: null, // Add: /projects/rag-chatbot.png
+        title: 'Personal Portfolio',
+        description: 'A modern, responsive developer portfolio built with Next.js and vanilla CSS. Features a premium dark/light mode UI, animated backgrounds, glassmorphism cards, and smooth scroll interactions.',
+        tech: ['Next.js', 'CSS', 'JavaScript'],
+        github: 'https://github.com/kamranabbasi3404/Personal-Portfolio',
+        demo: 'http://localhost:3000',
+        image: '/portfolio.jpg',
     },
 ];
 
@@ -47,9 +47,27 @@ const otherProjects = [
 
     },
     {
+        title: 'Buyonix UI/UX',
+        description: 'Full UI/UX design for Buyonix, a smart e-commerce platform. Covers user flows, wireframes, and high-fidelity prototypes.',
+        tech: ['Figma', 'UI/UX'],
+
+    },
+    {
         title: 'Quiz App',
         description: 'Interactive quiz application with multiple categories and scoring system.',
         tech: ['Java', 'MySQL'],
+
+    },
+    {
+        title: 'Hotel Management System',
+        description: 'Console-based hotel management system handling room booking, check-in/check-out, billing, and customer records.',
+        tech: ['C++'],
+
+    },
+    {
+        title: 'Advents',
+        description: 'A car-related web platform for browsing and listing vehicles, built with the MERN stack.',
+        tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
 
     },
 ];
