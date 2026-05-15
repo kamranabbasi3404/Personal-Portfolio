@@ -4,7 +4,7 @@
 :root{
   --bg:#09090b;--bg2:#131316;--card:rgba(255,255,255,0.05);--card-hover:rgba(255,255,255,0.08);
   --text:#f5f5f5;--text2:#a1a1aa;--muted:#71717a;
-  --accent:#8b5cf6;--accent2:#a78bfa;--accent-glow:rgba(139,92,246,0.15);
+  --accent:#14b8a6;--accent2:#2dd4bf;--accent-glow:rgba(20,184,166,0.15);
   --border:rgba(255,255,255,0.06);
   --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   --max:1100px;--radius:12px;
@@ -13,7 +13,7 @@
 
 [data-theme='light']{
   --bg:#fafafa;--bg2:#f0f0f0;--card:rgba(0,0,0,0.03);--card-hover:rgba(0,0,0,0.06);
-  --text:#18181b;--text2:#52525b;--muted:#a1a1aa;--border:rgba(0,0,0,0.08);--accent-glow:rgba(139,92,246,0.08);
+  --text:#18181b;--text2:#52525b;--muted:#a1a1aa;--border:rgba(0,0,0,0.08);--accent-glow:rgba(20,184,166,0.08);
 }
 [data-theme='light'] .navbar{background:rgba(250,250,250,0.85)}
 [data-theme='light'] .navbar-menu{background:rgba(250,250,250,0.98)}
@@ -29,7 +29,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px}
-::selection{background:rgba(139,92,246,0.25);color:var(--text)}
+::selection{background:rgba(20,184,166,0.25);color:var(--text)}
 
 /* ===== 3D Scroll Reveal System ===== */
 .reveal{opacity:0;transform:perspective(800px) translateY(40px) rotateX(4deg);transition:opacity 0.7s ease,transform 0.7s cubic-bezier(0.2,0.8,0.2,1)}
@@ -53,7 +53,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ===== Buttons ===== */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;font-size:0.9rem;font-weight:600;border-radius:var(--radius);transition:all var(--ease);transform-style:preserve-3d}
 .btn-primary{background:var(--accent);color:#fff;border:none}
-.btn-primary:hover{background:var(--accent2);transform:translateY(-2px) perspective(500px) rotateX(-2deg);box-shadow:0 8px 24px rgba(139,92,246,0.3)}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px) perspective(500px) rotateX(-2deg);box-shadow:0 8px 24px rgba(20,184,166,0.3)}
 .btn-secondary{background:transparent;color:var(--text);border:1px solid var(--border)}
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px) perspective(500px) rotateX(-2deg)}
 .btn-sm{padding:10px 20px;font-size:0.85rem}
@@ -98,12 +98,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-profile{display:flex;justify-content:center;perspective:800px;animation:heroImgIn 1s 0.2s cubic-bezier(0.2,0.8,0.2,1) both}
 @keyframes heroImgIn{from{opacity:0;transform:perspective(800px) translateZ(-80px) rotateY(-8deg) scale(0.9)}to{opacity:1;transform:perspective(800px) translateZ(0) rotateY(0) scale(1)}}
 .hero-profile-placeholder,.hero-profile-img{width:340px;height:400px;border-radius:20px;object-fit:cover;border:1px solid var(--border);overflow:hidden;transition:transform 0.5s cubic-bezier(0.2,0.8,0.2,1),box-shadow 0.5s ease;transform-style:preserve-3d}
-.hero-profile-placeholder:hover,.hero-profile-img:hover{transform:perspective(800px) rotateY(-5deg) rotateX(3deg) scale(1.03);box-shadow:20px 20px 60px rgba(0,0,0,0.3),-5px -5px 20px rgba(139,92,246,0.1);border-color:var(--accent)}
+.hero-profile-placeholder:hover,.hero-profile-img:hover{transform:perspective(800px) rotateY(-5deg) rotateX(3deg) scale(1.03);box-shadow:20px 20px 60px rgba(0,0,0,0.3),-5px -5px 20px rgba(20,184,166,0.1);border-color:var(--accent)}
 .hero-profile-placeholder img,.hero-profile-img img{width:100%;height:100%;object-fit:cover}
 .hero-profile-status{display:none}
 .status-dot{display:none}
 .hero-name{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;line-height:1.1;margin-bottom:16px;letter-spacing:-1.5px;color:var(--text)}
-.hero-name-gradient{background:linear-gradient(135deg,var(--accent),#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-name-gradient{background:linear-gradient(135deg,var(--accent),#5eead4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-title{font-size:1rem;color:var(--text2);font-weight:500;margin-bottom:20px;line-height:1.5}
 .hero-description{font-size:0.95rem;color:var(--muted);max-width:500px;line-height:1.8;margin-bottom:32px}
 .hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
@@ -148,7 +148,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .experience-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px;flex-wrap:wrap}
 .experience-role{font-size:1.05rem;font-weight:600;color:var(--text)}
 .experience-company{font-size:0.9rem;color:var(--text2);margin-top:2px}
-.experience-date{font-size:0.8rem;color:var(--accent);padding:4px 12px;background:rgba(139,92,246,0.08);border-radius:20px;white-space:nowrap}
+.experience-date{font-size:0.8rem;color:var(--accent);padding:4px 12px;background:rgba(20,184,166,0.08);border-radius:20px;white-space:nowrap}
 .experience-description{color:var(--text2);font-size:0.9rem}
 .experience-description li{padding-left:16px;margin-bottom:6px;position:relative}
 .experience-description li::before{content:'·';position:absolute;left:0;color:var(--accent);font-weight:700}
@@ -167,8 +167,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* Browser Mockup with 3D */
 .browser-mockup{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all 0.5s cubic-bezier(0.2,0.8,0.2,1);transform-style:preserve-3d}
-.featured-project:hover .browser-mockup{border-color:var(--accent);transform:perspective(1000px) rotateY(-4deg) rotateX(2deg) translateZ(20px);box-shadow:24px 16px 48px rgba(0,0,0,0.25),-4px -4px 16px rgba(139,92,246,0.05)}
-.featured-project.reversed:hover .browser-mockup{transform:perspective(1000px) rotateY(4deg) rotateX(2deg) translateZ(20px);box-shadow:-24px 16px 48px rgba(0,0,0,0.25),4px -4px 16px rgba(139,92,246,0.05)}
+.featured-project:hover .browser-mockup{border-color:var(--accent);transform:perspective(1000px) rotateY(-4deg) rotateX(2deg) translateZ(20px);box-shadow:24px 16px 48px rgba(0,0,0,0.25),-4px -4px 16px rgba(20,184,166,0.05)}
+.featured-project.reversed:hover .browser-mockup{transform:perspective(1000px) rotateY(4deg) rotateX(2deg) translateZ(20px);box-shadow:-24px 16px 48px rgba(0,0,0,0.25),4px -4px 16px rgba(20,184,166,0.05)}
 .browser-header{display:flex;align-items:center;gap:12px;padding:10px 14px;background:rgba(0,0,0,0.2);border-bottom:1px solid var(--border)}
 .browser-dots{display:flex;gap:6px}
 .browser-dots .dot{width:10px;height:10px;border-radius:50%}
@@ -227,7 +227,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .form-group{display:flex;flex-direction:column;gap:6px}
 .form-group label{font-size:0.85rem;color:var(--text2);font-weight:500}
 .form-group input,.form-group textarea{padding:12px 16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:inherit;font-size:0.9rem;transition:all var(--ease)}
-.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(139,92,246,0.1);transform:perspective(600px) translateZ(4px)}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(20,184,166,0.1);transform:perspective(600px) translateZ(4px)}
 .form-group input::placeholder,.form-group textarea::placeholder{color:var(--muted)}
 .form-group textarea{resize:vertical;min-height:120px}
 .form-status{margin-top:12px;padding:10px 16px;border-radius:8px;font-size:0.9rem;text-align:center}
