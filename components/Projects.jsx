@@ -29,7 +29,7 @@ const featuredProjects = [
         tech: ['Next.js', 'CSS', 'JavaScript'],
         github: 'https://github.com/kamranabbasi3404/Personal-Portfolio',
         demo: 'http://localhost:3000',
-        image: '/portfolio.jpg',
+        image: '/portfolio.jpg?v=2',
     },
 ];
 
