@@ -1,5 +1,13 @@
 const featuredProjects = [
     {
+        title: 'Buyonix — FYP Project',
+        description: 'A smart e-commerce platform featuring AI-based recommendations, visual product search, and an intelligent shopping assistant. Helps users quickly find relevant products using behavior analysis and image similarity matching.',
+        tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'ML', 'Docker'],
+        github: 'https://github.com/kamranabbasi3404/Buyonix-FYP',
+        demo: 'https://demo.example.com/buyonix',
+        image: '/buyonix.jpg?v=2',
+    },
+    {
         title: 'AI Job Portal',
         description: 'Job portal with AI-based CV analysis and job recommendations. Features intelligent matching between candidates and job postings using machine learning algorithms.',
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
@@ -14,14 +22,6 @@ const featuredProjects = [
         github: 'https://github.com/kamranabbasi3404/Live-Face-Recognition',
         demo: 'https://live-face-detection.netlify.app/',
         image: '/facedetection.jpg',
-    },
-    {
-        title: 'Buyonix',
-        description: 'A smart e-commerce platform featuring AI-based recommendations, visual product search, and an intelligent shopping assistant. Helps users quickly find relevant products using behavior analysis and image similarity matching.',
-        tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'ML', 'Docker'],
-        github: 'https://github.com/kamranabbasi3404/Buyonix-FYP',
-        demo: 'https://demo.example.com/buyonix',
-        image: '/buyonix.jpg?v=2',
     },
     {
         title: 'Personal Portfolio',
