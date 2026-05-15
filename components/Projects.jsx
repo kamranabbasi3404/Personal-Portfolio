@@ -8,6 +8,14 @@ const featuredProjects = [
         image: '/buyonix.jpg?v=2',
     },
     {
+        title: 'AI Study Assistant',
+        description: 'AI-powered study companion with RAG-based document Q&A and adaptive learning. Upload PDFs, get intelligent answers, auto-generated quizzes with conceptual grading, and spaced repetition scheduling — all with a bilingual Roman Urdu/English tutor.',
+        tech: ['Next.js', 'React.js', 'MongoDB', 'Tailwind CSS', 'Groq (Llama 3)', 'RAG', 'ML'],
+        github: 'https://github.com/kamranabbasi3404/AI-Study-Assistant',
+        demo: '',
+        image: '/aistudyassistant.jpg',
+    },
+    {
         title: 'AI Job Portal',
         description: 'Job portal with AI-based CV analysis and job recommendations. Features intelligent matching between candidates and job postings using machine learning algorithms.',
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
