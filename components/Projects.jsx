@@ -16,6 +16,14 @@ const featuredProjects = [
         image: '/aistudyassistant.jpg',
     },
     {
+        title: 'AI Code Review & Mentor Platform',
+        description: 'AI-powered code review platform with real-time mentoring. Features GitHub integration, interactive code playground with live terminal, AI-driven code analysis, and an intelligent chat mentor for guided learning.',
+        tech: ['Next.js', 'Express.js', 'MongoDB', 'OpenAI API', 'Socket.io', 'Docker'],
+        github: 'https://github.com/kamranabbasi3404/AI-Powered-Code-Review-Mentor-Platform',
+        demo: '',
+        image: '/codereview.jpg',
+    },
+    {
         title: 'AI Job Portal',
         description: 'Job portal with AI-based CV analysis and job recommendations. Features intelligent matching between candidates and job postings using machine learning algorithms.',
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
