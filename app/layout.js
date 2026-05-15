@@ -13,6 +13,9 @@ export const metadata = {
   description: 'Software Engineering student with hands-on experience in full-stack web development, AI/ML engineering, and DevOps. Specializing in MERN stack and machine learning integration.',
   keywords: ['Software Engineer', 'MERN Stack', 'AI/ML Engineer', 'Full Stack Developer', 'React', 'Node.js', 'Machine Learning', 'Next.js'],
   authors: [{ name: 'Kamran Ali Abbasi' }],
+  icons: {
+    icon: '/icon.svg',
+  },
   openGraph: {
     title: 'Kamran Ali Abbasi | Software Engineer',
     description: 'Software Engineering student specializing in MERN stack and AI/ML integration.',
