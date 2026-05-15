@@ -9,6 +9,13 @@ export default function ScrollReveal({ children, className = 'reveal', threshold
     const el = ref.current;
     if (!el) return;
 
+    // Immediately reveal if already in viewport (no wait for scroll)
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('visible');
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

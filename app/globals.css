@@ -155,7 +155,14 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* ===== Projects ===== */
 .featured-projects{display:flex;flex-direction:column;gap:48px;margin-bottom:64px;perspective:1000px}
-.featured-project{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.featured-project{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;animation:projectFadeIn 0.6s ease both}
+.featured-project:nth-child(1){animation-delay:0s}
+.featured-project:nth-child(2){animation-delay:0.1s}
+.featured-project:nth-child(3){animation-delay:0.15s}
+.featured-project:nth-child(4){animation-delay:0.2s}
+.featured-project:nth-child(5){animation-delay:0.25s}
+.featured-project:nth-child(6){animation-delay:0.3s}
+@keyframes projectFadeIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 .featured-project.reversed{direction:rtl}
 .featured-project.reversed>*{direction:ltr}
 .featured-project-title{font-size:1.5rem;font-weight:700;margin-bottom:12px;color:var(--text)}

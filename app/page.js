@@ -34,9 +34,7 @@ export default function Home() {
           <Experience />
         </ScrollReveal>
         <Divider />
-        <ScrollReveal className="reveal-scale">
-          <Projects />
-        </ScrollReveal>
+        <Projects />
         <Divider />
         <ScrollReveal>
           <Resume />

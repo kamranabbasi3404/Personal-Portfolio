@@ -151,6 +151,8 @@ function FeaturedProjectCard({ project, index }) {
                                 src={project.image}
                                 alt={project.title}
                                 className="browser-image"
+                                loading="lazy"
+                                decoding="async"
                                 style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                             />
                         ) : (
