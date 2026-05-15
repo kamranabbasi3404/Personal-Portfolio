@@ -116,20 +116,15 @@ const skills = [
 ];
 
 export default function Skills() {
-    // Double the list for seamless infinite scroll
-    const doubled = [...skills, ...skills];
-
     return (
         <section id="skills" className="section">
             <div className="container">
                 <h2 className="section-title">Skills &amp; Expertise</h2>
                 <p className="section-subtitle">Technologies and tools I use to bring ideas to life</p>
-            </div>
 
-            <div className="skills-marquee-wrapper">
-                <div className="skills-marquee-track">
-                    {doubled.map((skill, i) => (
-                        <div key={i} className="skills-marquee-item">
+                <div className="skills-grid">
+                    {skills.map((skill, i) => (
+                        <div key={i} className="skills-grid-item">
                             <div className="skills-marquee-icon">{skill.icon}</div>
                             <span className="skills-marquee-name">{skill.name}</span>
                         </div>

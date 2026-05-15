@@ -10,8 +10,8 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Kamran Ali Abbasi | Software Engineer',
-  description: 'Software Engineering student with hands-on experience in full-stack web development and AI-based systems. Specializing in MERN stack and machine learning integration.',
-  keywords: ['Software Engineer', 'MERN Stack', 'AI/ML', 'Full Stack Developer', 'React', 'Node.js', 'Machine Learning'],
+  description: 'Software Engineering student with hands-on experience in full-stack web development, AI/ML engineering, and DevOps. Specializing in MERN stack and machine learning integration.',
+  keywords: ['Software Engineer', 'MERN Stack', 'AI/ML Engineer', 'Full Stack Developer', 'React', 'Node.js', 'Machine Learning', 'Next.js'],
   authors: [{ name: 'Kamran Ali Abbasi' }],
   openGraph: {
     title: 'Kamran Ali Abbasi | Software Engineer',
