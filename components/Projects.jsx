@@ -4,7 +4,7 @@ const featuredProjects = [
         description: 'A smart e-commerce platform featuring AI-based recommendations, visual product search, and an intelligent shopping assistant. Helps users quickly find relevant products using behavior analysis and image similarity matching.',
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'ML', 'Docker'],
         github: 'https://github.com/kamranabbasi3404/Buyonix-FYP',
-        demo: 'https://demo.example.com/buyonix',
+        demo: 'https://ecommerce-buyonix.vercel.app/',
         image: '/buyonix.jpg?v=2',
     },
     {
@@ -20,7 +20,7 @@ const featuredProjects = [
         description: 'Job portal with AI-based CV analysis and job recommendations. Features intelligent matching between candidates and job postings using machine learning algorithms.',
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'ML'],
         github: 'https://github.com/kamranabbasi3404/job-portal-system',
-        demo: 'https://demo.example.com/ai-job-portal',
+        demo: '',
         image: '/hireflow.jpg',
     },
     {
@@ -36,7 +36,7 @@ const featuredProjects = [
         description: 'A modern, responsive developer portfolio built with Next.js and vanilla CSS. Features a premium dark/light mode UI, animated backgrounds, glassmorphism cards, and smooth scroll interactions.',
         tech: ['Next.js', 'CSS', 'JavaScript'],
         github: 'https://github.com/kamranabbasi3404/Personal-Portfolio',
-        demo: 'http://localhost:3000',
+        demo: 'https://kamranali-portfolio.netlify.app/',
         image: '/portfolio.jpg?v=2',
     },
 ];
