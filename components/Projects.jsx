@@ -5,7 +5,7 @@ const featuredProjects = [
         tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'ML', 'Docker'],
         github: 'https://github.com/kamranabbasi3404/Buyonix-FYP',
         demo: 'https://ecommerce-buyonix.vercel.app/',
-        image: '/buyonix.jpg?v=2',
+        image: '/buyonix.jpg?v=3',
     },
     {
         title: 'AI Study Assistant',
