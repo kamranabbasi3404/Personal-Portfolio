@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="footer-content">
           <div>
             <p className="footer-name">Kamran Ali Abbasi</p>
-            <p className="footer-role">Software Engineer · MERN Stack · AI/ML Engineer</p>
+            <p className="footer-role">AI/ML Engineer · LLMs, RAG &amp; Generative AI · Model Deployment</p>
           </div>
           <div className="footer-socials">
             {SOCIALS.map((social) => (
