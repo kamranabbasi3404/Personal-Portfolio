@@ -21,6 +21,9 @@ export const metadata = {
     description: 'Software Engineering graduate specializing in AI/ML Engineering, building LLM-powered systems and agentic RAG pipelines.',
     type: 'website',
   },
+  verification: {
+    google: 'google5bd7377c5e350e49',
+  },
 };
 
 export default function RootLayout({ children }) {
