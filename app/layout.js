@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://kamranali-portfolio.netlify.app'),
   title: 'Kamran Ali Abbasi | AI/ML Engineer',
   description: 'Software Engineering graduate specializing in AI/ML Engineering, with hands-on experience building LLM-powered systems including agentic RAG pipelines, fine-tuned sentiment models, and AI-driven recommendation engines.',
   keywords: ['AI/ML Engineer', 'LLMs', 'RAG', 'Generative AI', 'Python', 'Model Deployment', 'Software Engineer', 'Vector Search', 'Machine Learning', 'Agentic AI'],
