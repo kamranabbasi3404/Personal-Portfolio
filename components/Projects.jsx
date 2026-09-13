@@ -8,6 +8,22 @@ const featuredProjects = [
         image: '/buyonix.jpg?v=3',
     },
     {
+        title: 'ReviewSense AI',
+        description: 'A secure product review sentiment analysis and brand intelligence platform. Upload customer reviews (via CSV), analyze sentiments using a locally fine-tuned BERT model, visualize analytics, export PDF/CSV reports, and chat interactively with review data using Groq-powered LLMs (Llama 3.1). Features enterprise-grade 2FA security and httpOnly session cookies.',
+        tech: ['FastAPI', 'Next.js', 'Python', 'BERT (NLP)', 'Groq (Llama 3.1)', 'Tailwind CSS', 'SQLite'],
+        github: 'https://github.com/kamranabbasi3404/ReviewSense-AI',
+        demo: '',
+        image: '',
+    },
+    {
+        title: 'InsightAgent',
+        description: 'An agentic RAG research analyst that autonomously routes queries across local documents (PDFs) and live web search using LangGraph. Features multi-hop query decomposition, self-correcting retrieval loops, factual conflict resolution, and real-time SSE reasoning trace streaming.',
+        tech: ['LangGraph', 'FastAPI', 'Next.js', 'Python', 'ChromaDB', 'Agentic RAG', 'Groq', 'Tavily'],
+        github: 'https://github.com/kamranabbasi3404/InsightAgent',
+        demo: '',
+        image: '',
+    },
+    {
         title: 'AI Study Assistant',
         description: 'AI-powered study companion with RAG-based document Q&A and adaptive learning. Upload PDFs, get intelligent answers, auto-generated quizzes with conceptual grading, and spaced repetition scheduling — all with a bilingual Roman Urdu/English tutor.',
         tech: ['Next.js', 'React.js', 'MongoDB', 'Tailwind CSS', 'Groq (Llama 3)', 'RAG', 'ML'],
