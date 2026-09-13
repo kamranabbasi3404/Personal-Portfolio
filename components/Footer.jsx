@@ -1,3 +1,5 @@
+import VisitorCounter from './VisitorCounter';
+
 const SOCIALS = [
   {
     name: 'GitHub',
@@ -56,6 +58,7 @@ export default function Footer() {
               </a>
             ))}
           </div>
+          <VisitorCounter />
           <p className="footer-copyright">
             © {currentYear} Kamran Ali Abbasi. All rights reserved.
           </p>
