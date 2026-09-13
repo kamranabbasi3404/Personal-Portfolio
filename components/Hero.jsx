@@ -8,10 +8,10 @@ export default function Hero() {
               Hi, I&apos;m <span className="hero-name-gradient">Kamran Ali Abbasi</span>
             </h1>
             <p className="hero-title">
-              AI/ML Engineer | LLMs, RAG &amp; Generative AI | Python | Model Deployment
+              AI/ML Engineer | Full Stack Developer | LLMs, RAG &amp; Generative AI | Python | Model Deployment
             </p>
             <p className="hero-description">
-              Software Engineering graduate specializing in AI/ML Engineering, with hands-on experience building LLM-powered systems including agentic RAG pipelines, fine-tuned sentiment models, and AI-driven recommendation engines. Proficient in Python, LLM APIs (Groq, Gemini), vector search, and cloud deployment.
+              Software Engineering graduate specializing in AI/ML Engineering and Full Stack Development, with hands-on experience building LLM-powered systems including agentic RAG pipelines, fine-tuned sentiment models, and AI-driven recommendation engines. Proficient in Python, modern web technologies, LLM APIs (Groq, Gemini), vector search, and cloud deployment.
             </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn btn-primary">

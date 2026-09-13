@@ -4,7 +4,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-kamranabbasi3404-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kamranabbasi3404)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kamran_Ali_Abbasi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kamran-ali-abbasi-b767a0280/)
 
-Welcome to the official repository for my personal developer portfolio website. I am a **Software Engineering graduate** specializing in **AI/ML Engineering**, with hands-on experience building LLM-powered systems, agentic RAG pipelines, fine-tuned sentiment models, and AI recommendation engines.
+Welcome to the official repository for my personal developer portfolio website. I am a **Software Engineering graduate** specializing in **AI/ML Engineering** and **Full Stack Development**, with hands-on experience building LLM-powered systems, agentic RAG pipelines, fine-tuned sentiment models, and AI recommendation engines.
 
 🌐 **Live URL**: [https://kamranali-portfolio.netlify.app/](https://kamranali-portfolio.netlify.app/)
 
